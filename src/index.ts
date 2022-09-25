@@ -152,7 +152,7 @@ Gun.chain.scope = async function (what: string[], callback, { verbose, alias, en
  */
 Gun.chain.unpack =  function ({ alias, encoding }) {
 	const log = console.log;
-	alias = alias || 'scope';
+	alias = alias ?? 'scope';
 	encoding = encoding ?? 'utf8';
 
 	let _gun = this;
