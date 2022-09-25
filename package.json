@@ -1,0 +1,24 @@
+{
+  "name": "scope-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bresnow/scope.git",
+  "author": "bresnow <bresnow@me.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "yarn zx build.mjs",
+    "scope": "node example/scope_example.mjs",
+    "unpack": "node example/unpack_example.mjs"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "gun": "^0.2020.1238",
+    "zx": "^7.0.8"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.15.9",
+    "typescript": "^4.8.3"
+  }
+}
